@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatologia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+ <!-- Perdon por usar IA para esta parte pero la verdad queria que se viera bonito y no sabia como implementar las patas por todo el fondo de manera aleatoria -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const cantidad = 200;
+    const body = document.body;
+
+    for (let i = 0; i < cantidad; i++) {
+        let paw = document.createElement("img");
+        paw.src = "cat_paw.webp"; 
+
+        paw.style.position = "fixed";
+        paw.style.width = Math.random() * 40 + 30 + "px";
+        paw.style.opacity = "0.12";
+        paw.style.zIndex = "0";
+        paw.style.pointerEvents = "none"; 
+
+        paw.style.top = Math.random() * 100 + "vh";
+        paw.style.left = Math.random() * 100 + "vw";
+        paw.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+        body.appendChild(paw);
+    }
+});
+</script>
+<body>
+
+<header class="header">
+    <img src="https://i.ibb.co/tpGLpQMS/Gatologia-logo.png" alt="Logo de Gatologia" class="logo">
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre nostros">Sobre Nosotros</a></li>
+            <li><a href="registro.html">Registrarse</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.ibb.co/TDy3Q6mJ/purina-10-datos-curiosos-sobre-los-gatos.avif" class="d-block w-100">
+
+      <div class="carousel-caption" style="font-weight: bold;">
+        <h2 style="font-weight: bold;">GATOLOGÍA: Tu portal de <br> noticias felinas y más</h2>
+        <p>Tu fuente de informacion sobre el mundo felino</p>
+      </div>
+    </div>
+    <div class="carousel-item active">
+      <img src="https://i.ibb.co/xqrQjTDJ/supervivencia-gatos-6362b9f553582.jpg" class="d-block w-100">
+
+      <div class="carousel-caption" style="font-weight: bold;">
+        <h2 style="font-weight: bold;">GATOLOGÍA: Tu portal de <br> noticias felinas y más</h2>
+        <p>Tu fuente de informacion sobre el mundo felino</p>
+      </div>
+    </div>
+    <div class="carousel-item active" >
+      <img src="https://i.ibb.co/35BphMxY/75552.webp" class="d-block w-100">
+
+      <div class="carousel-caption" style="font-weight: bold;">
+        <h2 style="font-weight: bold;">GATOLOGÍA: Tu portal de <br> noticias felinas y más</h2>
+        <p>Tu fuente de informacion sobre el mundo felino</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="caracteristicas">
+  <h1 style="font-family: 'Arial Narrow Bold'; font-weight: bold;">Artículos destacados</h1>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+
+    <div class="col-md-4 d-flex justify-content-center mb-4">
+      <div class="card" style="width: 22rem;">
+        <img src="https://i.ibb.co/svt9HCq9/vaca.jpg" class="card-img-top" alt="gato">
+        <div class="card-body">
+          <h3 class="card-text">Nuevo descubrimiento <br>sobre el ronroneo</h3>
+          <p class="card-text">Pincha en la imagen para saber mas informacion</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center mb-4">
+      <div class="card" style="width: 22rem;">
+        <img src="https://i.ibb.co/S4tgj9Y4/luluwatona.jpg" class="card-img-top" alt="gato">
+        <div class="card-body">
+          <h3 class="card-text">5 consejos para <br>enriquecer su ambiente</h3>
+          <p class="card-text">Pincha en la imagen para saber mas informacion</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center mb-4">
+      <div class="card" style="width: 22rem;">
+        <img src="https://i.ibb.co/4w3sYxXd/watonql.jpg" class="card-img-top" alt="gato">
+        <div class="card-body">
+          <h3 class="card-text">5 consejos para evitar <br>el sobrepeso en gatos</h3>
+          <p class="card-text">Pincha en la imagen para saber mas informacion</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row align-items-stretch">
+    
+    <div class="col-md-8">
+      <h2 class="mb-4" style="font-family: 'Arial Narrow Bold'; font-weight: bold;">Noticias de Última Hora</h2>
+
+      <div class="card mb-3 news-card-horizontal">
+        <div class="row g-0 h-100">
+          <div class="col-md-4">
+            <img src="https://i.ibb.co/pjdxfNyn/2.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Nuevo descubrimiento sobre el ronroneo de los gatos</h5>
+              <p class="card-text">Descubre cómo los gatos usan el ronroneo para comunicarse y expresar su bienestar.</p>
+              <p class="card-text"><small class="text-body-secondary">Ultima actualización hace 5 mins</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 news-card-horizontal">
+        <div class="row g-0 h-100">
+          <div class="col-md-4">
+            <img src="https://i.ibb.co/cMXgcJg/dosecat.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">5 consejos para enriquecer el ambiente de tu gato</h5>
+              <p class="card-text">Descubre cómo hacer que el entorno de tu gato sea más estimulante y seguro.</p>
+              <p class="card-text"><small class="text-body-secondary">Ultima actualización hace 5 mins</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-0 news-card-horizontal"> <div class="row g-0 h-100">
+          <div class="col-md-4">
+            <img src="https://i.ibb.co/xtGzX77H/image.jpg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">5 consejos para evitar el sobrepeso en gatos</h5>
+              <p class="card-text">Descubre cómo mantener a tu gato en un peso saludable con estos consejos prácticos.</p>
+              <p class="card-text"><small class="text-body-secondary">Ultima actualización hace 5 mins</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex flex-column">
+      
+      <div class="recuadro-curioso mb-4 p-4 rounded" style="background-color: #f7f1e3;">
+        <h3 class="mb-3">Dato Curioso del Día</h3>
+        <p>Sus bigotes son radares: No solo sirven para verse elegantes; tienen terminaciones nerviosas que les permiten detectar cambios mínimos en las corrientes de aire, ayudándoles a saber si caben por un espacio o a cazar en total oscuridad.</p>
+      </div>
+
+      <div class="card birthday-card flex-grow-1">
+        <img src="https://i.ibb.co/LzjzcYcZ/persecumple.jpg" alt="cumpleaños perse" alt="Gatito curioso">
+        <div class="birthday-caption">
+          <h4 style="font-weight: bold;">Cumpleaños del día</h4>
+          <p>¡¡Hoy perse cumple 7 años!! felicidades a nuestra amiga gatuna</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

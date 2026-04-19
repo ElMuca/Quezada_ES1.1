@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body1">
+    <div id="paw-background" aria-hidden="true"></div>
+
+    <header class="header2">
+        <img src="https://i.ibb.co/tpGLpQMS/Gatologia-logo.png" alt="Logo de Gatologia" class="logo">
+    </header>
+
+    <div class="contenedor"> 
+        <h2 align="center">Formulario de Registro</h2>
+        <form>
+            Nombre:
+            <input type="text" name="nombre" required><br><br>
+
+            Contraseña:
+            <input type="password" name="clave" required><br><br>
+            
+            Correo:
+            <input type="email" name="correo" required><br><br>
+
+            Edad:
+            <input type="number" name="edad" min="1"><br><br>
+
+            Fecha de nacimiento:
+            <input type="date" name="fecha"><br><br>
+
+            <div class="botones_de_registro">
+                <button type="button" class="boton_registro">Registrar</button><button type="button" class="boton_registro"><a href="index.html" class="volver" style="color: white;">Volver al inicio</a></button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Perdon por usar IA para esta parte pero la verdad queria que se viera bonito y no sabia como implementar las patas por todo el fondo de manera aleatoria -->
+    <script>
+      const pawBg = document.getElementById('paw-background');
+      const pawSrc = 'cat_paw.webp';
+
+      function createPaws() {
+        pawBg.innerHTML = '';
+        const total = Math.max(18, Math.floor((window.innerWidth * window.innerHeight) / 9000));
+
+        for (let i = 0; i < total; i++) {
+          const paw = document.createElement('img');
+          paw.src = pawSrc;
+          paw.alt = '';
+          paw.className = 'paw';
+
+          const size = 35 + Math.random() * 55;
+          const x = Math.random() * 100;
+          const y = Math.random() * 100;
+          const rot = Math.random() * 360;
+          const opacity = 0.08 + Math.random() * 0.18;
+
+          paw.style.width = `${size}px`;
+          paw.style.left = `${x}%`;
+          paw.style.top = `${y}%`;
+          paw.style.opacity = opacity;
+          paw.style.transform = `translate(-50%, -50%) rotate(${rot}deg)`;
+
+          pawBg.appendChild(paw);
+        }
+      }
+
+      createPaws();
+      window.addEventListener('resize', () => {
+        clearTimeout(window.__pawResizeTimer);
+        window.__pawResizeTimer = setTimeout(createPaws, 150);
+      });
+    </script>
+</body>
+</html>
