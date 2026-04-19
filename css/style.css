@@ -1,0 +1,219 @@
+body {
+    background-color: #fcf8ed !important;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.body1 {
+  background-color: #fcf8ed !important;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#paw-background {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#paw-background .paw {
+  position: absolute;
+  user-select: none;
+  opacity: 0.18;
+  width: 72px;
+  height: auto;
+  transform-origin: center;
+}
+
+.header, .header2, .contenedor, .caracteristicas, .card, .carousel{
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: #EDF2F4;
+    position: relative;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #2B2D42;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ccc;
+}
+
+#carouselExampleSlidesOnly {
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.caracteristicas {
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.card {
+  margin-top: 15px;
+}
+
+.news-card-horizontal {
+  max-width: none; 
+  margin-left: 0;
+  margin-right: 0;
+  height: auto;
+}
+
+.news-card-horizontal .row .col-md-4 {
+  max-height: 150px; 
+  overflow: hidden;
+}
+
+.news-card-horizontal .row .col-md-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-card-horizontal .card-body {
+  padding: 10px;
+}
+
+.news-card-horizontal .card-title {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.news-card-horizontal {
+  max-width: none;
+  min-height: 160px;
+  overflow: hidden;
+}
+
+.recuadro-curioso {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.recuadro-curioso h3 {
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.birthday-card {
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.birthday-card img {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.birthday-caption {
+  position: relative; 
+  z-index: 10;
+  margin-top: auto; 
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  padding: 20px;
+}
+
+.contenedor {
+  max-width: 325px;
+  margin: 90px auto;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #F2E8DC;
+  box-shadow: 0px 10px 25px rgba(101, 75, 53, 0.25);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.boton_registro {
+  background-color: peru;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botones_de_registro {
+  display: flex;
+  gap: 10px;
+  padding-left: 60px;
+}
+
+input {
+  background-color: #F8EFE4; 
+  border: 1px solid #D5C3B3; 
+  border-radius: 20px; 
+  color: #5C4332; 
+  outline: none; 
+}
